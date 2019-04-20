@@ -5,15 +5,20 @@
 }
 body{
   background: #364f6b;
-  
+  margin: 0;
+  padding: 0;
 }
 .Coffeee{
   position:absolute;
   top: 10%;
   left: 30%;
+  width: 600px;
+  height: 500px;
 }
 .coffee{
-	position: relative;
+	position: absolute;
+  top: 20px;
+  left: 20px;
 	width: 198px;	/* 50 - 2 */
 	height: 396px;	/* 100 - 2 - 2 */
 	background: #ddc49e;
@@ -29,12 +34,12 @@ body{
   -webkit-animation-play-state:running;
           animation-play-state:running;
 }
-@-webkit-keyframes C1{
-  0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+ @-webkit-keyframes C1{
+  0%{-webkit-transform: rotate(0deg)scale(0.9);transform: rotate(0deg)scale(0.9);}
   100%{-webkit-transform: rotate(600deg)scale(0.4);transform: rotate(600deg)scale(0.4);}
 }
-@keyframes C1{
-  0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+ @keyframes C1{
+  0%{-webkit-transform: rotate(0deg)scale(0.9);transform: rotate(0deg)scale(0.9);}
   100%{-webkit-transform: rotate(600deg)scale(0.4);transform: rotate(600deg)scale(0.4);}
 }
 .milk-foam1{
@@ -56,7 +61,9 @@ body{
 	height: 200px;
 }
 .coffee1{
-  position:absolute;
+  position:relative;
+  top: 20px;
+  left:23px;
   width: 400px;
   height: 400px;
   background: #7f4f21;
@@ -65,10 +72,10 @@ body{
 }
 .cup{
   position:absolute;
-  top: 7%;
-  left: 28%;
+  top: 0%;
+  left: 0%;
   width: 450px;
-  height: 450px;
+  height: 445px;
   background: #fff;
   z-index:-2;
   border-radius: 50%;
@@ -76,8 +83,8 @@ body{
 }
 .handle{
   position:absolute;
-  top: 40%;
-  left: 750px;
+  top: 200px;
+  left: 430px;
   width: 100px;
   height: 50px;
   background: #fff;  
@@ -88,7 +95,7 @@ body{
 
 .text{
   position: absolute;
-  top: 85%;
+  top: 89%;
   left: 33%;
   font-family: 'Indie Flower', cursive;
   font-size: 36px;
