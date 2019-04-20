@@ -1,0 +1,118 @@
+*{
+  align-content: center;
+  
+  /* border: solid 1px; */
+}
+body{
+  background: #364f6b;
+  
+}
+.Coffeee{
+  position:absolute;
+  top: 10%;
+  left: 30%;
+}
+.coffee{
+	position: relative;
+	width: 198px;	/* 50 - 2 */
+	height: 396px;	/* 100 - 2 - 2 */
+	background: #ddc49e;
+	border: 2px solid #7f4f21;
+	border-width: 10px 198px 10px 10px;
+	border-radius: 50%;
+  -webkit-animation:C1 3s infinite both;
+          animation:C1 3s infinite both;
+  -webkit-animation-play-state:paused;
+          animation-play-state:paused;
+}
+.coffee:hover{
+  -webkit-animation-play-state:running;
+          animation-play-state:running;
+}
+@-webkit-keyframes C1{
+  0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100%{-webkit-transform: rotate(600deg)scale(0.4);transform: rotate(600deg)scale(0.4);}
+}
+@keyframes C1{
+  0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100%{-webkit-transform: rotate(600deg)scale(0.4);transform: rotate(600deg)scale(0.4);}
+}
+.milk-foam1{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: #ddc49e;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.milk-foam2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #7f4f21;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.coffee1{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  background: #7f4f21;
+  border-radius: 50%;
+  z-index: -1;
+}
+.cup{
+  position:absolute;
+  top: 7%;
+  left: 28%;
+  width: 450px;
+  height: 450px;
+  background: #fff;
+  z-index:-2;
+  border-radius: 50%;
+  
+}
+.handle{
+  position:absolute;
+  top: 40%;
+  left: 750px;
+  width: 100px;
+  height: 50px;
+  background: #fff;  
+  border-radius: 10px 200px 200px 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.text{
+  position: absolute;
+  top: 85%;
+  left: 33%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  color: #fff;
+  width: 10em;
+  border-right: .05em solid;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: typing 3s steps(22) 1s 1 normal both,caret 500ms steps(22) infinite;
+          animation: typing 3s steps(22) 1s 1 normal both,caret 500ms steps(22) infinite;
+}
+.text:hover{
+  -webkit-animation-play-state:running;
+          animation-play-state:running;
+}
+@-webkit-keyframes typing {  
+  from { width: 0 }  
+}
+@keyframes typing {  
+  from { width: 0 }  
+}
+@-webkit-keyframes caret {
+  50% { border-color: transparent; }
+}
+@keyframes caret {
+  50% { border-color: transparent; }
+}
